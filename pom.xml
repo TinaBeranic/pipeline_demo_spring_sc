@@ -14,7 +14,7 @@
 	<groupId>si.um.feri</groupId>
 	<artifactId>measurements</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>measurements</name>
+	<name>MeasurementsBackend</name>
 	<description>Measurements Backend</description>
 	
 	<properties>
