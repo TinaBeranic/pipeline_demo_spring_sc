@@ -34,6 +34,7 @@ jobs:
 
   static-code-analysis:
     name: SonarCloud Analysis
+    needs: build-test-package
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
