@@ -29,7 +29,7 @@ public class ProductController {
 	private ProductRepository dao;
 
 	@GetMapping("/products")
-	public Iterable<si.um.feri.measurements.dto.Product> getAllProducts() {
+	public @ResponseBody Iterable<si.um.feri.measurements.dto.Product> getAllProducts() {
 		List<si.um.feri.measurements.dto.Product> ret=new ArrayList<>();
 		dao.findAll().forEach(p -> ret.add(p.toDto()));
 		return ret;
